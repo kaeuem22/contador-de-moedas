@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url(./colors.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+}
+
+body{
+    background: var(--very-light-grayish-cyan);
+}
+
+main {
+  padding: 1rem;
+}
+
+.instructions {
+  margin-block: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+
+strong {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--very-dark-cyan);
+}
+
+#dinheiro span, #ultimoValorSelecionado{
+    font-weight: normal;
+}
+
+span {
+  font-size: 1.5rem;
+  color: rgb(73, 196, 120);
+}
+
+.normalButtons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.differentButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.differentButtons input {
+  padding: 0.7rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input[type="button"] {
+  width: 45%;
+  max-width: 12rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: var(--very-light-grayish-cyan);
+}
+
+.normalButtons {
+  margin-top: 2rem;
+}
+
+.normalButtons input {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.normalButtons input,
+.differentButtons input {
+  background: var(--strong-cyan);
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+.instructions {
+  display: block;
+}
+
+.input-box{
+    background: var(--very-dark-cyan);
+    margin-block: 2rem;
+    margin-inline: 4rem;
+    border-radius: 20px;
+    padding-block: 1rem;
+}
+
+.input-box p{
+    color: white;
+}
+
+strong span, #ultimoValorSelecionado{
+    font-size: 1.1rem;
+    color: var(--dark-grayish-cyan);
+}
+
+input[type='button']:hover{
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    background: var(--hover-cyan);
+    transition: .3s;
+}
+
+.differentButtons .blocked{
+  background: var(--dark-grayish-cyan);
+  color: var(--very-light-grayish-cyan);
+}
+
+.differentButtons .blocked:hover{
+  cursor:not-allowed;
+  background: var(--dark-grayish-cyan);
+  color: var(--very-light-grayish-cyan);
+}
+
+@media (max-width: 600px) {
+  .instructions {
+    display: none;
+  }
+
+  .input-box{
+    margin-inline: 0;
+    padding: 0.5rem;
+  }
+
+  .normalButtons{
+    margin-top: 1rem;
+  }
+
+  .differentButtons{
+    margin-bottom: 1rem;
+  }
+}
